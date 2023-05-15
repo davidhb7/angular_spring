@@ -1,0 +1,20 @@
+<div class="card border-dark mb-3" style="max-width: 30rem;">
+  <div class="card-header">Integrantes</div>
+  <div class="card-body">
+    <h5 class="card-title">Lista de Osos</h5>
+    <table class="table table-bordered table-striped">
+      <tr>
+        <th>Id</th>
+        <th>Nombre</th>
+        <th>Apellido P</th>
+        <th>Apellido S</th>
+      </tr>
+      <tr *ngFor="let cliente of clientes">
+        <th>{{cliente.id}}</th>
+        <th>{{cliente.nombre}}</th>
+        <th>{{cliente.apellidoA}}</th>
+        <th>{{cliente.apellidoB}}</th>
+      </tr>
+    </table>
+  </div>
+</div>
